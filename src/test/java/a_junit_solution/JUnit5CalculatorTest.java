@@ -2,12 +2,11 @@ package a_junit_solution;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class JUnit5CalculatorTest {
 
-  Calculator calculator;
+  Calculator calculator = new Calculator();
 
   @Test
   public void add_whenAdding2Plus2_shouldReturn4() {
